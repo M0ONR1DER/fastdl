@@ -1,7 +1,0 @@
-LightmappedGeneric
-{
-	"$basetexture" "Tools/toolsnodraw"
-
-	"%compilenodraw" 1
-	"%keywords" "tf"
-}
