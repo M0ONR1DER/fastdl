@@ -1,0 +1,91 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/workshop/weapons/c_models/c_directhit/texture_sb_scope_01"
+
+//Cubemap stuff
+//	"$envmap" "env_cubemap"	// This looks like it's a bit weathered, weird it still has a faint shine
+//	"$envmaptint" "[ .2 .2 .2 ]"
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "2"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[3 3 3]"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "1"				
+	"$rimlightboost" "16"
+
+	//SheenColor
+//	$phongwarptexture "models/workshop/weapons/c_models/c_directhit/sheen_9"
+	"$phongExponentTexture" "models/workshop/weapons/c_models/c_directhit/scope_specular_01"
+	$phongAlbedoTint 1
+
+	//---------------
+	// Visual Effects
+	//---------------
+	"$glowcolor" 		"1"
+	"$cloakPassEnabled" 	"1"
+	"$yellow" 		"0"
+	"$sheenPassEnabled" "1"
+	"$commweapon"		"0"
+	"$phongdisablehalflambert" "1"
+
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"$commadd_phongexponent" "30"
+	"$commadd_phongboost" 	"22.5"
+
+	"Proxies"
+	{
+		"ModelGlowColor"
+		{
+			"resultVar" 	"$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  	"$glowcolor"
+			"resultVar" 	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  	"$glowcolor"
+			"resultVar" 	"$color2"
+		}
+		"invis"
+		{
+		}
+		"YellowLevel"
+		{
+			"resultVar" 	"$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" 	"$color2"
+			"srcVar2" 	"$yellow"
+			"resultVar" 	"$color2"
+		}
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+        "ConVarEx"
+        {
+            "ConVar" "tf2c_player_nohalflambert"
+            "0"
+            {
+                "$PhongDisableHalfLambert"  "0"
+            }
+            "1"
+            {
+                "$PhongDisableHalfLambert"  "1"
+            }
+        }
+	}
+}

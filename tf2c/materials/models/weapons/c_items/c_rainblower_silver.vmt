@@ -1,0 +1,10 @@
+"Patch"
+{
+	include "materials/models/weapons/c_items/c_rainblower.vmt"
+	
+	insert
+	{
+//	"$envmap" "cubemaps/cubemap_newzealium"
+	"$envmap" "models/cubemaps/pyroland_cube_hdr"
+	}
+}

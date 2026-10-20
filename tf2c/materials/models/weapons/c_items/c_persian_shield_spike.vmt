@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\c_items\c_persian_shield.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\c_items\c_persian_shield_spike"
+	}
+}

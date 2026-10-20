@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/items/quake1/grenade2"
+	"$selfillum" 1
+
+    "Proxies"
+    {
+		"Sine"
+		{
+			"resultVar" $selfillumtint
+			"sinemin" .1
+			"sinemax" 2.00
+			"sineperiod" 0.30
+		}
+	}
+}

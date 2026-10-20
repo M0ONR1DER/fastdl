@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\c_items\med_pack\backpack_red.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\c_items\med_pack\backpack_blue"
+	}
+}

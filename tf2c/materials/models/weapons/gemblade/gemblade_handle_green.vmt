@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models/weapons/gemblade/gemblade_handle.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models/weapons/gemblade/gemblade_handle_green"
+	}
+}

@@ -1,0 +1,29 @@
+"Patch"
+{
+	include "materials\models\weapons\PSO\pso_acc_alcuriaberet_a.vmt"
+	
+	insert
+	{
+//	"$basetexture" "models\weapons\PSO\pso_acc_alcuriaberet_a_blue"
+
+	"$basetexture" "models\weapons\PSO\pso_acc_alcuriaberet_c"
+ 	"$blendtintbybasealpha" "1" 
+	"$color2" "{73 128 160}"
+	"$colortint_base" "{73 128 160}"
+	"$colortint_tmp" "[0 0 0]" 
+
+		"Proxies"
+		{
+			"ItemTintColor"
+			{
+				"resultVar" "$colortint_tmp"
+			}
+			"SelectFirstIfNonZero"
+			{
+				"srcVar1"	"$colortint_tmp"
+				"srcVar2"	"$colortint_base"
+				"resultVar" "$color2"
+			}
+		}
+	}
+}

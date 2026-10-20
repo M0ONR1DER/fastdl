@@ -1,0 +1,64 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\PSO\pso_acc_alcuriaberet_a"
+	"$bumpmap" "models\weapons\PSO\pso_acc_alcuriaberet_a_n"
+
+	"$phong" "1"
+	"$phongexponent" "2"
+	"$phongboost"	"0.25"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges"	"[1 .1 .1]"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "2"
+
+	//---------------
+	// Visual Effects
+	//---------------
+	"$cloakPassEnabled" 	"1"
+	"$yellow" 		"0"
+	"$sheenPassEnabled" "1"
+	"$phongdisablehalflambert" "1"
+
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+        "ConVarEx"
+        {
+            "ConVar" "tf2c_player_nohalflambert"
+            "0"
+            {
+                "$PhongDisableHalfLambert"  "0"
+            }
+            "1"
+            {
+                "$PhongDisableHalfLambert"  "1"
+            }
+        }
+	}
+}

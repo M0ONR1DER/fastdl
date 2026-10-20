@@ -1,0 +1,4 @@
+"Patch"
+{
+	include "materials\models\weapons\PSO\pso_spreadneedle_a.vmt"
+}

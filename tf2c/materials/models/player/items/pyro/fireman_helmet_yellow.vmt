@@ -1,0 +1,11 @@
+"Patch"
+{
+	include "materials/models/player/items/pyro/fireman_helmet.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models/player/items/pyro/fireman_helmet_yellow"
+	"$color2" "{218 157 40}"	// 165 122 41
+	"$colortint_base" "{218 157 40}"
+	}
+}

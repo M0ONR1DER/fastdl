@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\w_stickybomb_launcher\w_stickybomb_launcher.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\w_stickybomb_launcher\w_stickybomb_launcher_defender_blue"
+	}
+}

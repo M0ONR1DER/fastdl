@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\c_items\c_pigeon_backpack/pigeoncoop_medic.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\c_items\c_pigeon_backpack/pigeoncoop_medic_green"
+	}
+}

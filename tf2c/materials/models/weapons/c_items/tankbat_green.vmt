@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\c_items\tankbat.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\c_items\tankbat_green"
+	}
+}

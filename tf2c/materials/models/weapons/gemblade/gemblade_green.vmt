@@ -1,0 +1,11 @@
+"Patch"
+{
+	include "materials/models/weapons/gemblade/gemblade.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models/weapons/gemblade/gemblade_green"
+	"$envmap" "effects/invuln_green"
+	"$phongtint" "[0.3 4 0.4]"
+	}
+}

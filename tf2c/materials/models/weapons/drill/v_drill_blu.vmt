@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\drill\v_drill.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models\weapons\drill\drill_blu"
+	}
+}

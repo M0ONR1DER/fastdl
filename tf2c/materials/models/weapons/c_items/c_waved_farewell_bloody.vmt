@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\c_items\c_waved_farewell.vmt"
+	
+	insert
+	{
+//	"$baseTexture" "models\weapons\c_items\c_waved_farewell_bloody"
+	}
+}

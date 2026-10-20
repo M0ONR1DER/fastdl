@@ -1,0 +1,11 @@
+"Patch"
+{
+	include "materials/models/player/items/medic/medic_tyrolean.vmt"
+	
+	insert
+	{
+	"$baseTexture" "models/player/items/medic/medic_tyrolean_yellow"
+	"$color2" "{109 81 32}"
+	"$colortint_base" "{109 81 32}"
+	}
+}

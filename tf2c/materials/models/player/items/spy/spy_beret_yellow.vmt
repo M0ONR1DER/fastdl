@@ -1,0 +1,10 @@
+"Patch"
+{
+	include "materials/models/player/items/spy/spy_beret.vmt"
+	
+	insert
+	{
+	"$color2" "{63 43 12}"
+	"$colortint_base" "{63 43 12}"
+	}
+}

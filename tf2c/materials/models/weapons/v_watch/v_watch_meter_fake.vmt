@@ -1,0 +1,17 @@
+UnLitGeneric
+{
+	"$basetexture"	"models/weapons/v_watch/v_watch_meter_fake"
+	"$translucent" "1"
+
+	//---------------
+	// Visual Effects
+	//---------------
+	"$cloakPassEnabled" 	"1"
+
+	"Proxies"
+	{
+		"weapon_invis"	// Amusingly, this "breaks" it so it doesn't cloak in VM but does in WM. This happens to be exactly what I needed to fix it!
+		{
+		}
+	}
+}
