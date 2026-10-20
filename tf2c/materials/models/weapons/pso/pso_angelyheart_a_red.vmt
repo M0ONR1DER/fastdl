@@ -1,9 +1,0 @@
-"Patch"
-{
-	include "materials\models\weapons\PSO\pso_angelyheart_a.vmt"
-	
-	insert
-	{
-	"$basetexture" "models\weapons\PSO\pso_angelyheart_a_red"
-	}
-}

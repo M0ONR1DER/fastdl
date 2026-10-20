@@ -1,9 +1,0 @@
-"Patch"
-{
-	include "materials\models\weapons\c_items\c_cutlass\c_cutlass_uber_red.vmt"
-	
-	insert
-	{
-	"$selfillumtint" "[.2 .4 1]"
-	}
-}

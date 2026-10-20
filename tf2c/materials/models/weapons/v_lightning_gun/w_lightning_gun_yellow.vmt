@@ -1,9 +1,0 @@
-"Patch"
-{
-	include "materials\models\weapons\v_lightning_gun\w_lightning_gun.vmt"
-	
-	insert
-	{
-	"$baseTexture" "models\weapons\v_lightning_gun\w_lightning_gun_yellow"
-	}
-}

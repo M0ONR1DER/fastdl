@@ -1,9 +1,0 @@
-"Patch"
-{
-	include "materials\models\weapons\v_sickle\Sickle_sheet.vmt"
-	
-	insert
-	{
-	"$baseTexture" "models\weapons\v_sickle\Sickle_sheet_bloody"
-	}
-}
