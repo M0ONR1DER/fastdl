@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/w_models/w_m202_flash_large"
+	"$translucent" 1
+}

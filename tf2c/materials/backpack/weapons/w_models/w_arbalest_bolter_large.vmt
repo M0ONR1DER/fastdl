@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/w_models/w_arbalest_bolter_large"
+	"$translucent" 1
+}

@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/w_models/w_uber_agent_large"
+	"$translucent" 1
+}
